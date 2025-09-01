@@ -1,9 +1,11 @@
 pipeline {
-    agent any
-
+    agent any 
+    
     stages {
-        stage ('Test') {
-            echo "first Jenkins file"
+        stage ('test'){
+            steps {
+                echo 'hello'
+            }
         }
     }
 }
